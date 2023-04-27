@@ -52,8 +52,9 @@ public class PortVRSystem : MonoBehaviour
             urlPortingSystem.RigReplacer.Replace(urlCurrentSystem.RigReplacer.Rig);
             //urlPortingSystem.PlatformSwitcher.Switch();
             urlPortingSystem.Presettings.ReplaceSettings();
-            urlPortingSystem.InteractiveObjectReplacer.Replace(urlCurrentSystem.InteractiveObjectReplacer.InteractableObject);
+            urlPortingSystem.InteractiveObjectReplacer.Replace(urlCurrentSystem.InteractiveObjectReplacer);
             urlPortingSystem.UIReplacer.Replace(urlCurrentSystem.UIReplacer);
+            urlPortingSystem.TeleportationReplacer.Replace(urlCurrentSystem.TeleportationReplacer);
         }
     }
 }
