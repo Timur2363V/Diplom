@@ -33,19 +33,19 @@ public class PortVRSystem : MonoBehaviour
     void Invoke()
     {
         var urlPortingSystem = GetURLSystem(portingSystem);
-        if (urlPortingSystem != null)
+        if (urlPortingSystem.UrlVRSystem != "")
             request = Client.Add(urlPortingSystem.UrlVRSystem);
         EditorApplication.update += Progress;
     }
 
     void Progress()
     {
-        if (request.IsCompleted || request == null)
+        if (request == null || request.IsCompleted)
         {
             if (request != null)
                 if (request.Status == StatusCode.Success)
                     Debug.Log("Installed: " + request.Result.packageId);
-                else if (request.Status >= StatusCode.Failure)
+                else if (request.Status >= StatusCode.Failure && request.Error != null)
                     Debug.Log(request.Error.message);
 
             EditorApplication.update -= Progress;

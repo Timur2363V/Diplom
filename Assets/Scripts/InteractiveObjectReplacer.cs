@@ -15,22 +15,30 @@ class InteractiveObjectReplacer
 
     public void Replace(InteractiveObjectReplacer interactiveObjectReplacer)
     {
-        var interactableObjects = MonoBehaviour.FindObjectsByType(interactiveObjectReplacer.InteractableObject.GetType(), FindObjectsSortMode.None);
-        
-        for (int i = 0; i < interactableObjects.Length; i++)
+        if (interactiveObjectReplacer.InteractableObject != null)
         {
-            var interactableObjectInScene = interactableObjects[i].GameObject();
-            MonoBehaviour.DestroyImmediate(interactableObjects[i]);
-            interactableObjectInScene.AddComponent(interactableObject.GetType());
+            var interactableObjects = MonoBehaviour.FindObjectsByType(interactiveObjectReplacer.InteractableObject.GetType(), FindObjectsSortMode.None);
+
+            for (int i = 0; i < interactableObjects.Length; i++)
+            {
+                var interactableObjectInScene = interactableObjects[i].GameObject();
+                MonoBehaviour.DestroyImmediate(interactableObjects[i]);
+                if (interactableObject != null)
+                    interactableObjectInScene.AddComponent(interactableObject.GetType());
+            }
         }
 
-        var socketInteractableObjects = MonoBehaviour.FindObjectsByType(interactiveObjectReplacer.SocketInteractableObject.GetType(), FindObjectsSortMode.None);
-
-        for (int i = 0; i < socketInteractableObjects.Length; i++)
+        if (interactiveObjectReplacer.SocketInteractableObject != null)
         {
-            var socketInteractableObjectInScene = socketInteractableObjects[i].GameObject();
-            MonoBehaviour.DestroyImmediate(socketInteractableObjects[i]);
-            socketInteractableObjectInScene.AddComponent(socketInteractableObject.GetType());
+            var socketInteractableObjects = MonoBehaviour.FindObjectsByType(interactiveObjectReplacer.SocketInteractableObject.GetType(), FindObjectsSortMode.None);
+
+            for (int i = 0; i < socketInteractableObjects.Length; i++)
+            {
+                var socketInteractableObjectInScene = socketInteractableObjects[i].GameObject();
+                MonoBehaviour.DestroyImmediate(socketInteractableObjects[i]);
+                if (socketInteractableObject != null)
+                    socketInteractableObjectInScene.AddComponent(socketInteractableObject.GetType());
+            }
         }
     }
 }

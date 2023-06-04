@@ -15,22 +15,30 @@ class TeleportationReplacer
 
     public void Replace(TeleportationReplacer teleportationReplacer)
     {
-        var teleportationAnchors = MonoBehaviour.FindObjectsByType(teleportationReplacer.TeleportationAnchor.GetType(), FindObjectsSortMode.None);
-
-        for (int i = 0; i < teleportationAnchors.Length; i++)
+        if (teleportationReplacer.TeleportationAnchor != null)
         {
-            var teleportationAnchorInScene = teleportationAnchors[i].GameObject();
-            MonoBehaviour.DestroyImmediate(teleportationAnchors[i]);
-            teleportationAnchorInScene.AddComponent(teleportationAnchor.GetType());
+            var teleportationAnchors = MonoBehaviour.FindObjectsByType(teleportationReplacer.TeleportationAnchor.GetType(), FindObjectsSortMode.None);
+
+            for (int i = 0; i < teleportationAnchors.Length; i++)
+            {
+                var teleportationAnchorInScene = teleportationAnchors[i].GameObject();
+                MonoBehaviour.DestroyImmediate(teleportationAnchors[i]);
+                if (teleportationAnchor != null)
+                    teleportationAnchorInScene.AddComponent(teleportationAnchor.GetType());
+            }
         }
 
-        var teleportationAreas = MonoBehaviour.FindObjectsByType(teleportationReplacer.TeleportationArea.GetType(), FindObjectsSortMode.None);
-
-        for (int i = 0; i < teleportationAreas.Length; i++)
+        if (teleportationReplacer.TeleportationArea != null)
         {
-            var teleportationAreaInScene = teleportationAreas[i].GameObject();
-            MonoBehaviour.DestroyImmediate(teleportationAreas[i]);
-            teleportationAreaInScene.AddComponent(teleportationArea.GetType());
+            var teleportationAreas = MonoBehaviour.FindObjectsByType(teleportationReplacer.TeleportationArea.GetType(), FindObjectsSortMode.None);
+
+            for (int i = 0; i < teleportationAreas.Length; i++)
+            {
+                var teleportationAreaInScene = teleportationAreas[i].GameObject();
+                MonoBehaviour.DestroyImmediate(teleportationAreas[i]);
+                if (teleportationArea != null)
+                    teleportationAreaInScene.AddComponent(teleportationArea.GetType());
+            }
         }
     }
 }
