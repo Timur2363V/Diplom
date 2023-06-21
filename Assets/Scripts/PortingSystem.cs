@@ -1,8 +1,8 @@
-﻿using System;
+using System;
 using UnityEngine;
 
 [Serializable]
-public class URLSystem
+public class PortingSystem
 {
     [SerializeField]
     string urlVRSystem;
@@ -20,9 +20,12 @@ public class URLSystem
     UIReplacer uIReplacer;
     [SerializeField]
     TeleportationReplacer teleportationReplacer;
+    //[SerializeField]
+    //ReplacerScripts replacerScripts;
 
     public VRSystem System => system;
     public string UrlVRSystem => urlVRSystem;
+    //public ReplacerScripts ReplacerScripts => replacerScripts;
     internal RigReplacer RigReplacer => rigReplacer;
     //internal PlatformSwitcher PlatformSwitcher => platformSwitcher;
     internal Presettings Presettings => presettings;

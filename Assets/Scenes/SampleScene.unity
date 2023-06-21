@@ -2144,6 +2144,8 @@ MonoBehaviour:
     teleportationReplacer:
       teleportationAnchor: {fileID: 2415274886212063879, guid: 0e65c0a3685dcbe47bea35b1a6da1973, type: 3}
       teleportationArea: {fileID: 261799045031696708, guid: 38585eb03d18fa24db671a19eaa52b1c, type: 3}
+    replacerScripts:
+      nameScript: TestClass2
   - urlVRSystem: 
     system: 1
     rigReplacer:
@@ -2165,6 +2167,8 @@ MonoBehaviour:
     teleportationReplacer:
       teleportationAnchor: {fileID: 6440541303936680978, guid: c56a57fd007ae80419d63641f5285996, type: 3}
       teleportationArea: {fileID: 3745842965629191893, guid: e6fa81edbe394014ba44404ad3128962, type: 3}
+    replacerScripts:
+      nameScript: 
   - urlVRSystem: 
     system: 3
     rigReplacer:
@@ -2186,6 +2190,8 @@ MonoBehaviour:
     teleportationReplacer:
       teleportationAnchor: {fileID: 0}
       teleportationArea: {fileID: 0}
+    replacerScripts:
+      nameScript: TestClass
 --- !u!4 &2002059293
 Transform:
   m_ObjectHideFlags: 0

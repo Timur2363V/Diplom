@@ -1,4 +1,4 @@
-﻿// (c) Meta Platforms, Inc. and affiliates. Confidential and proprietary.
+// (c) Meta Platforms, Inc. and affiliates. Confidential and proprietary.
 
 using UnityEngine;
 using UnityEngine.UI;

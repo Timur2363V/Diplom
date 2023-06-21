@@ -1,4 +1,4 @@
-﻿
+
 public enum VRSystem
 {
     VRTK,

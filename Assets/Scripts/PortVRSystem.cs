@@ -12,11 +12,11 @@ public class PortVRSystem : MonoBehaviour
     VRSystem portingSystem;
 
     [SerializeField]
-    URLSystem[] URLSystems;
+    PortingSystem[] URLSystems;
 
     AddRequest request;
 
-    URLSystem GetURLSystem(VRSystem system)
+    PortingSystem GetURLSystem(VRSystem system)
     {
         for (int i = 0; i < URLSystems.Length; i++)
         {
@@ -57,6 +57,7 @@ public class PortVRSystem : MonoBehaviour
             urlPortingSystem.InteractiveObjectReplacer.Replace(urlCurrentSystem.InteractiveObjectReplacer);
             urlPortingSystem.UIReplacer.Replace(urlCurrentSystem.UIReplacer);
             urlPortingSystem.TeleportationReplacer.Replace(urlCurrentSystem.TeleportationReplacer);
+            //urlPortingSystem.ReplacerScripts.Replace(urlCurrentSystem.ReplacerScripts);
         }
     }
 }
