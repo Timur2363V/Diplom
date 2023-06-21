@@ -8,6 +8,5 @@ public enum VRSystem
     PicoIntergration,
     DPVRSDK,
     WaveXR,
-    CardboardXRplugin,
-    GoogleVRSDK
+    CardboardXRplugin
 }

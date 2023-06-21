@@ -1,5 +1,14 @@
 {
   "dependencies": {
+    "com.google.xr.cardboard": {
+      "version": "file:C:/Users/Player/Downloads/cardboard-xr-plugin-master/cardboard-xr-plugin-master",
+      "depth": 0,
+      "source": "local",
+      "dependencies": {
+        "com.unity.xr.management": "3.2.9",
+        "com.unity.xr.legacyinputhelpers": "2.1.4"
+      }
+    },
     "com.htc.upm.vive-input-utility": {
       "version": "1.18.1",
       "depth": 0,

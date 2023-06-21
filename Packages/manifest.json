@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "com.google.xr.cardboard": "file:C:/Users/Player/Downloads/cardboard-xr-plugin-master/cardboard-xr-plugin-master",
     "com.htc.upm.vive-input-utility": "1.18.1",
     "com.htc.upm.wave.essence": "5.3.0-r.26.1",
     "com.htc.upm.wave.native": "5.3.0-r.26.1",
