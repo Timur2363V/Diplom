@@ -1,10 +1,11 @@
 {
   "dependencies": {
-    "com.google.xr.cardboard": "file:C:/Users/Player/Downloads/cardboard-xr-plugin-master/cardboard-xr-plugin-master",
+    "com.google.xr.cardboard": "file:C:/Users/Player/Downloads/cardboard-xr-plugin-master",
     "com.htc.upm.vive-input-utility": "1.18.1",
     "com.htc.upm.wave.essence": "5.3.0-r.26.1",
     "com.htc.upm.wave.native": "5.3.0-r.26.1",
-    "com.htc.upm.wave.xrsdk": "5.3.0-r.26.1",
+    "com.htc.upm.wave.openxr": "1.0.5",
+    "com.htc.upm.wave.xrsdk": "5.3.1-r.2",
     "com.unity.collab-proxy": "2.0.1",
     "com.unity.feature.development": "1.0.1",
     "com.unity.ide.rider": "3.0.18",

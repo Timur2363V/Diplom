@@ -3,6 +3,7 @@ namespace VRTK
 {
 #if VRTK_DEFINE_SDK_STEAMVR
     using UnityEngine;
+    using Valve.VR;
 #endif
 
     /// <summary>

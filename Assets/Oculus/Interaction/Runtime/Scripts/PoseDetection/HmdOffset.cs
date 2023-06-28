@@ -31,7 +31,7 @@ namespace Oculus.Interaction.PoseDetection
         private IHmd Hmd;
 
         [SerializeField]
-        private Vector3 _offsetTranslation = Vector3.zero;
+        public Vector3 _offsetTranslation = Vector3.zero;
         [SerializeField]
         private Vector3 _offsetRotation = Vector3.zero;
 

@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 
 [Serializable]
-class UIReplacer
+public class UIReplacer
 {
     [SerializeField]
     MonoBehaviour canvasRaycaster;

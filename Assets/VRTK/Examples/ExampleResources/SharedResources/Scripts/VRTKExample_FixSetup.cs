@@ -110,8 +110,8 @@ namespace VRTK.Examples.Utilities
             }
             if (ovrAvatar != null)
             {
-                OvrAvatar avatarScript = ovrAvatar.GetComponent<OvrAvatar>();
-                avatarScript.StartWithControllers = true;
+                //OvrAvatar avatarScript = ovrAvatar.GetComponent<OvrAvatar>();
+                //avatarScript.StartWithControllers = true;
                 ovrAvatar.name = ovrAvatar.name.Replace("(Clone)", "");
                 ovrAvatar.transform.SetParent(oculusSDK.transform);
                 ovrAvatar.SetActive(true);

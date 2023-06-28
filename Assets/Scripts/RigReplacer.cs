@@ -3,7 +3,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 
 [Serializable]
-class RigReplacer
+public class RigReplacer
 {
     [SerializeField]
     MonoBehaviour rig;

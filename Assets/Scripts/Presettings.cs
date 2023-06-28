@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.Rendering;
 
 [Serializable]
-class Presettings
+public class Presettings
 {
     [SerializeField]
     BuildTargetGroup group;
